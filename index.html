@@ -12,8 +12,10 @@
         </a>
         <ul>
           <li><a href="catalog.html">Каталог</a>
-            <ul class="visually-hidden">
-              <li><a href="">Новинки</a></li>
+            <ul>
+              <li><a href=""><span class="new-items">Новинки</span></a></li>
+            </ul>
+            <ul>
               <li><a href="">Сливочное</a></li>
               <li><a href="">Щербеты</a></li>
               <li><a href="">Фруктовый лёд</a></li>
@@ -23,33 +25,58 @@
           <li><a href="">Доставка и оплата</a></li>
           <li><a href="">О компании</a></li>
         </ul>
-        <a href="">Поиск</a>
-        <a href="">Вход</a>
-        <a href="">Корзина</a>
-        <section id="search-form">
-          <form action="https://echo.htmlacademy.ru" method="get">
-            <label>
-              <p>Поиск</p>
-              <input type="text" name="search" placeholder="Крем-брюле">
-            </label>
-            <button type="submit" name="search">Искать</button>
-          </form>
-        </section>
-        <section id="login-form">
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <p>
-              <label for="login-login">Логин</label>
-              <input id="login-login" type="email" name="login" placeholder="email@example.com" required>
-            </p>
-            <p>
-              <label for="login-password">Пароль</label>
-              <input id="login-password" type="password" name="password" placeholder="••••••••" required>
-            </p>
-            <button type="submit">Войти</button><br>
-            <a href="">Забыли пароль?</a><br>
-            <a href="">Новая регистрация</a>
-          </form>
-        </section>
+        <div>
+         <a href="">Поиск</a>
+         <form action="https://echo.htmlacademy.ru" method="get" id="search-form">
+           <label class="visually-hidden" for="search">Поиск</label>
+             <input type="search" name="search" id="search" placeholder="Крем-брюле">
+           <button type="submit">Искать</button>
+         </form>
+        </div>
+        <div>
+         <a href="">Вход</a>
+         <form action="https://echo.htmlacademy.ru" method="post" id="login-form">
+           <p>
+             <label for="login-login">Логин</label>
+             <input id="login-login" type="email" name="login" placeholder="email@example.com" required>
+           </p>
+           <p>
+             <label for="login-password">Пароль</label>
+             <input id="login-password" type="password" name="password" placeholder="••••••••" required>
+           </p>
+           <button type="submit">Войти</button><br>
+           <a href="">Забыли пароль?</a><br>
+           <a href="">Новая регистрация</a>
+         </form>
+        </div>
+        <div>
+         <a href="">Корзина</a>
+         <form action="https://echo.htmlacademy.ru" method="post" id="basket-form">
+           <ul>
+             <li><img src="img/cross-small.svg"></li>
+             <li><img src="img/item-0.jpg"></li>
+             <li><span>Пломбир с апельсиновым джемом</span></li>
+             <li><span>1,5 кг Х</span></li>
+             <li><span>200 руб.</span></li>
+             <li><span> 300 руб.</span></li>
+           </ul>
+           <ul>
+             <li><img src="img/cross-small.svg"></li>
+             <li><img src="img/item-2.jpg"></li>
+             <li><span>Клубничный пломбир с присыпкой из белого шоколада</span></li>
+             <li><span>1,5 кг Х</span></li>
+             <li><span>300 руб.</span></li>
+             <li><span> 450 руб.</span></li>
+           </ul>
+           <div class="total-price">
+             <span>Итого: 750 руб.</span>
+           </div>
+           <div>
+             <button type="submit">Оформить заказ</button>
+           </div>
+        </form>
+        </div>
+
       </nav>
     </header>
     <main>
@@ -171,8 +198,11 @@
           <section id="feedback-form">
             <form action="https://echo.htmlacademy.ru" method="post" id="feedback-form">
               <p>Мы обязательно вам ответим!</p>
+              <label for="feedback-name" class="visually-hidden">Введите имя</label>
               <input id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия"><br>
+              <label for="feedback-email" class="visually-hidden">Введите email</label>
               <input id="feedback-email" type="email" name="feedback-email" placeholder="email@example.com" required><br>
+              <label for="feedback-comment" class="visually-hidden">Введите ваш комментарий</label>
               <textarea id="feedback-comment" name="feedback-comment" rows="10">В свободной форме</textarea><br>
               <button type="submit">Отправить</button>
             </form>
