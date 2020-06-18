@@ -52,28 +52,32 @@
         <div>
          <a href="">Корзина</a>
          <form action="https://echo.htmlacademy.ru" method="post" id="basket-form">
-           <ul>
-             <li>
-               <button type="submit">Убрать из корзины</button>
-               <img src="img/item-0.jpg" width="50px" height="50px">
-               <span>Пломбир с апельсиновым джемом</span>
-               <span><span>1,5 кг Х</span><span>200 руб.</span></span>
-               <span> 300 руб.</span>
-             </li>
-             <li>
-               <button type="submit">Убрать из корзины</button>
-               <img src="img/item-2.jpg" width="50px" height="50px">
-               <span>Клубничный пломбир с присыпкой из белого шоколада</span>
-               <span><span>1,5 кг Х</span><span>300 руб.</span></span>
-               <span> 450 руб.</span>
-             </li>
-           </ul>
            <div>
-             <div class="total-price">
-               <span>Итого: 750 руб.</span>
+             <div>
+               <ul>
+                 <li>
+                   <button type="submit" class="visually-hidden">Убрать из корзины</button>
+                   <img src="img/item-0.jpg" width="50px" height="50px">
+                   <span>Пломбир с апельсиновым джемом</span>
+                   <span><span><b>1,5 кг Х</b></span><span>200 руб.</span></span>
+                   <span> 300 руб.</span>
+                 </li>
+                 <li>
+                   <button type="submit" class="visually-hidden">Убрать из корзины</button>
+                   <img src="img/item-2.jpg" width="50px" height="50px">
+                   <span>Клубничный пломбир с присыпкой из белого шоколада</span>
+                   <span><span><b>1,5 кг Х</b></span><span>300 руб.</span></span>
+                   <span> 450 руб.</span>
+                 </li>
+               </ul>
              </div>
              <div>
-               <button type="submit">Оформить заказ</button>
+               <div class="total-price">
+                 <span>Итого: 750 руб.</span>
+               </div>
+               <div>
+                 <button type="submit">Оформить заказ</button>
+               </div>
              </div>
            </div>
         </form>
