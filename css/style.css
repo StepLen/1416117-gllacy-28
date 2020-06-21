@@ -1,0 +1,231 @@
+:root{
+  --basic-white: #ffffff;
+  --basic-black: #323232;
+  --basic-grey: #5A5A5A;
+  --medium-white: rgba(255, 255, 255, 0.8);
+  --light-white: rgba(255, 255, 255, 0.2);
+  --basic-blue: #8996A6;
+  --basic-green: #849D8F;
+  --basic-pink: #9D8B84;
+  --gradient-start-red: #F26843;
+  --gradient-stop-red:#E74A35;
+  --background-pop-up: #F8F7F4;
+  --background-active: #FBDED7;
+  --background-hover-sort: #1E90FF;
+}
+body{
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-white);
+  background-color: var(--basic-pink);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*Навигация в шапке*/
+.main-navigation{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: var(--basic-white);
+}
+.main-navigation, .main-navigation ul{
+  list-style: none;
+}
+.user-navigation{
+  font-size: 14px;
+  line-height: 16px;
+}
+/*Поведение ссылок*/
+.main-navigation a,
+.user-navigation a {
+  color: var(--basic-white);
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+.assortment-menu a,
+.new-items a{
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  text-decoration: none;
+}
+.assortment-menu a:hover,
+.assortment-menu a:focus,
+.new-items a:hover,
+.new-items a:focus{
+  background-color: var(--background-active);
+}
+/*Временно скрыть формы*/
+.pop-up{
+  display: none;
+}
+.visually-hidden{
+  display: none;
+}
+/*Тело главной*/
+.promo-banner{
+  list-style: none;
+}
+.promo-item{
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+}
+.promo-banner button{
+  font-size: 32px;
+  line-height: 44px;
+  background-color: var(--gradient-start-red);
+}
+.gift h2{
+  font-size: 35px;
+  line-height: 41px;
+}
+.gift p{
+  font-size: 18px;
+  line-height: 22px;
+}
+.gift button{
+  font-size: 18px;
+  line-height: 24px;
+  background-color: var(--gradient-start-red);
+}
+.hits,
+.assortment{
+  list-style: none;
+}
+.hits a,
+.assortment a{
+  color: var(--basic-white);
+  font-size: 16px;
+  line-height: 22px;
+}
+.hit-price, .price-item{
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+}
+.kg{
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: bold;
+}
+.about-us{
+  background-color: var(--background-active);
+  color: var(--basic-black);
+  line-height: 22px;
+}
+.about{
+  font-size: 24px;
+  line-height: 30px;
+}
+.blog{
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+.blog a{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: var(--basic-black);
+}
+.blog h2{
+  font-size: 16px;
+  line-height: 22px;
+}
+.mailing{
+  background-color: var(--basic-white);
+  color: var(--basic-grey);
+  line-height: 22px;
+}
+.mailing button{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  background-color: var(--gradient-start-red);
+}
+.address{
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  font-size: 14px;
+  line-height: 20px;
+}
+.address-important{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: var(--basic-black);
+  text-decoration: none;
+}
+.address button{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  background-color: var(--gradient-start-red);
+}
+.social-button{
+  list-style: none;
+}
+.social-button a{
+    color: var(--basic-white);
+    text-decoration: none;
+}
+.info{
+  list-style: none;
+}
+.info a{
+    text-decoration: none;
+    color: var(--basic-white);
+    font-size: 13px;
+    line-height: 18px;
+}
+.info .suppliers{
+  font-weight: bold;
+}
+.copyright{
+  font-size: 12px;
+  line-height: 18px;
+}
+.copyright a{
+  color: var(--basic-white);
+}
+/*Стилизация каталога*/
+.bread-crumbs{
+  list-style: none;
+}
+.bread-crumbs a{
+  text-decoration: none;
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 16px;
+}
+.contact{
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+}
+.contact a{
+  font-size: 22px;
+  line-height: 24px;
+  text-decoration: none;
+  color: var(--basic-white);
+}
+.filters{
+  font-size: 14px;
+  line-height: 16px;
+}
+.filter{
+  background-color: var(--medium-white);
+}
