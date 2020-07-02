@@ -28,30 +28,69 @@ img {
   max-width: 100%;
   height: auto;
 }
-/*Навигация в шапке*/
+.page{
+  height: 100%;
+}
+.page-body{
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
 .main-navigation{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-navigation-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-header-logo{
+  width: 154px;
+  height: 64px;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+/*Навигация в шапке*/
+.site-navigation{
+  display: flex;
+  flex-direction: row;
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
   color: var(--basic-white);
 }
-.main-navigation, .main-navigation ul{
+.site-navigation li{
+  padding-right: 10px;
+}
+.site-navigation, .site-navigation ul{
   list-style: none;
 }
 .user-navigation{
+  display: flex;
+  flex-direction: row;
   font-size: 14px;
   line-height: 16px;
 }
 /*Поведение ссылок*/
-.main-navigation a,
+.site-navigation a,
 .user-navigation a {
   color: var(--basic-white);
+  padding-right: 10px;
 }
 
-.main-navigation a:hover,
-.main-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.site-navigation a:hover,
+.site-navigation a:focus,
+.site-navigation a:hover,
+.site-navigation a:focus {
   background-color: var(--basic-white);
   color: var(--basic-black);
 }
@@ -88,6 +127,25 @@ img {
   line-height: 44px;
   background-color: var(--gradient-start-red);
 }
+.article-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.raspberry{
+  background-image:url("../img/rasp-back.jpg");
+  background-color: var(--basic-pink);
+  background-repeat: no-repeat, no-repeat;
+}
+.choko{
+  background-image:url("../img/choko-back.jpg");
+  background-color: var(--basic-pink);
+  background-repeat: no-repeat, no-repeat;
+}
+.gift, .blog, .mailing{
+  width: 560px;
+  height: 220px;
+}
 .gift h2{
   font-size: 35px;
   line-height: 41px;
@@ -101,7 +159,16 @@ img {
   line-height: 24px;
   background-color: var(--gradient-start-red);
 }
-.hits,
+.hits-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+.hits-wrapper li{
+  width: 267px;
+}
 .assortment{
   list-style: none;
 }
@@ -122,6 +189,8 @@ img {
   font-weight: bold;
 }
 .about-us{
+  background-image: url("../img/wafer-pattern.jpg");
+  background-repeat: repeat;
   background-color: var(--background-active);
   color: var(--basic-black);
   line-height: 22px;
@@ -131,6 +200,8 @@ img {
   line-height: 30px;
 }
 .blog{
+  background-image: url("../img/straw-back.jpg");
+  background-repeat: no-repeat;
   background-color: var(--basic-white);
   color: var(--basic-black);
 }
@@ -145,9 +216,17 @@ img {
   line-height: 22px;
 }
 .mailing{
+  background-image: url("../img/post-back.jpg");
+  background-repeat: no-repeat;
   background-color: var(--basic-white);
   color: var(--basic-grey);
   line-height: 22px;
+}
+.mailing-wrapper{
+  width: 548px;
+  height: 210px;
+  background-color: var(--background-pop-up);
+  margin: 5px 6px;
 }
 .mailing button{
   font-size: 18px;
@@ -174,10 +253,19 @@ img {
   font-weight: bold;
   background-color: var(--gradient-start-red);
 }
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .social-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   list-style: none;
 }
 .social-button a{
+    padding-right: 10px;
     color: var(--basic-white);
     text-decoration: none;
 }
@@ -228,4 +316,42 @@ img {
 }
 .filter{
   background-color: var(--medium-white);
+}
+
+.crumbs-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.crumbs-container{
+  display: flex;
+  flex-direction: column;
+}
+.crumbs-container h1{
+  order: 2;
+}
+.bread-crumbs{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.bread-crumbs li{
+  padding-right: 10px;
+}
+.assortment{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+.assortment li{
+  width: 267px;
+  min-height: 298px;
+  margin-right: 26px;
+  margin-bottom: 43px;
+}
+.bread-crumbs-catalog{
+  justify-content: flex-end;
 }
